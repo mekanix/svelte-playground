@@ -1,0 +1,5 @@
+---
+- name: install svelte packages
+  with_items: "{{ svelte_packages }}"
+  package:
+    name: "{{ item.name }}"
